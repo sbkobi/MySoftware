@@ -7,7 +7,7 @@ properties(
         ),
         parameters(
             [
-                string(description: 'What is your name?', name: 'name', default: "Jack")
+                string(description: 'What is your name?', name: 'name', defaultValue: "Jack")
             ]
         )
     ]
