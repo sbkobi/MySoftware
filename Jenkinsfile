@@ -14,7 +14,6 @@ properties(
 )
 pipeline {
     agent any
-
     stages {
         stage('Stage1') {
             steps {
@@ -22,17 +21,5 @@ pipeline {
                 echo "Got name: '${name}'"
             }
         }
-        stage('Stage2') {
-            steps {
-                script {
-                echo 'Stage 2'
-                func1()
-                bat 'time /t'
-            }
-        }
     }
-}
-
-def func1(){
-    return "Hi from func1"
 }
