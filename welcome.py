@@ -2,3 +2,4 @@
 
 def welcome() -> None:
     print("New Screen")
+    print("added content")
