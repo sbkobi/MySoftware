@@ -2,12 +2,12 @@ properties(
     [
         pipelineTriggers(
              [
-                 pollSCM('0,30 * * * *')
+                 pollSCM('* * * * *')
              ]
         ),
         parameters(
             [
-                string(description: 'What is your name?', name: 'name')
+                string(description: 'What is your name?', name: 'name', default: "Jack")
             ]
         )
     ]
