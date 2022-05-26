@@ -2,7 +2,7 @@ properties(
     [
         pipelineTriggers(
              [
-                 pollSCM('0,30 * * * *')
+                 pollSCM('* * * * *')
              ]
         ),
         parameters(
