@@ -2,7 +2,7 @@ properties(
     [
         pipelineTriggers(
              [
-                 cron('* * * * *')
+                 pollSCM('0,30 * * * *')
              ]
         ),
         parameters(
